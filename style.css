@@ -9,6 +9,7 @@ body {
 	line-height: 1.5;
 	margin: 0;
 	padding: 0;
+	color: #000;
 }
 
 .container {
@@ -108,63 +109,69 @@ body {
 }
 .img__text {
 	display: none;
-	color:#000;
+	color: #000;
 	text-align: center;
 	font-family: Roboto;
 	font-size: 25px;
 	font-style: normal;
 	font-weight: 400;
-  margin-bottom: 32px;
+	margin-bottom: 32px;
 }
 
-/* Адаптив для мобільних пристроїв */
+.header__text br {
+	display: none;
+}
+
 @media (max-width: 600px) {
-  .img__text {
-    display: block;
-  }
+	.img__text {
+		display: block;
+    font-size: 20px;
+	}
 	.header__text {
-		font-size: 28px;
+		font-size: 32px;
 		line-height: 36px;
 	}
-  .insurance__copy-text + .insurance__copy-text {
-    margin-top: 45px;
-  }
-  
+	.insurance__copy-text + .insurance__copy-text {
+		margin-top: 45px;
+	}
+
 	.range__title {
 		font-size: 28px;
 		line-height: 36px;
 	}
-
+	.header__text br {
+		display: block;
+	}
 	.range__item {
 		width: 100%;
 		max-width: 285px;
 		font-size: 18px;
 		line-height: 28px;
-    padding: 25px 25px 20px;
+		padding: 25px 25px 20px;
 	}
 	.range__items {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 20px;
 		justify-content: center;
-		margin-bottom: 440px;
+		margin-bottom: 350px;
 	}
 	.range__item:nth-child(5) {
 		grid-column: 1 / -1;
 		justify-self: center;
-    padding: 25px 25px 20px;
-    flex: 1;
+		padding: 25px 25px 20px;
+		flex: 1;
 		max-width: 170px;
 	}
-  .insurance__copy{
-    margin-bottom: 30px;
-  }
+	.insurance__copy {
+		margin-bottom: 30px;
+	}
 	.insurance__img img {
 		height: auto;
 	}
 
 	.insurance__policy {
-    padding-bottom: 55px;
+		padding-bottom: 55px;
 		align-items: center;
 		gap: 20px;
 	}
