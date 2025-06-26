@@ -108,6 +108,7 @@ body {
 	text-decoration: underline;
 }
 .img__text {
+	padding: 0 5px;
 	display: none;
 	color: #000;
 	text-align: center;
@@ -116,10 +117,6 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	margin-bottom: 32px;
-}
-
-.header__text br {
-	display: none;
 }
 
 @media (max-width: 600px) {
@@ -138,9 +135,6 @@ body {
 	.range__title {
 		font-size: 28px;
 		line-height: 36px;
-	}
-	.header__text br {
-		display: block;
 	}
 	.range__item {
 		width: 100%;
